@@ -1,0 +1,374 @@
+{
+  "1": {
+    "num": "1",
+    "file": "mario",
+    "series": "mario"
+  },
+  "2": {
+    "num": "2",
+    "file": "donkey_kong",
+    "series": "donkeykong"
+  },
+  "3": {
+    "num": "3",
+    "file": "link",
+    "series": "zelda"
+  },
+  "4": {
+    "num": "4",
+    "file": "samus",
+    "series": "metroid"
+  },
+  "4e": {
+    "num": "4",
+    "displayNum": "04ᵋ",
+    "file": "dark_samus",
+    "series": "metroid"
+  },
+  "5": {
+    "num": "5",
+    "file": "yoshi",
+    "series": "yoshi"
+  },
+  "6": {
+    "num": "6",
+    "file": "kirby",
+    "series": "kirby"
+  },
+  "7": {
+    "num": "7",
+    "file": "fox",
+    "series": "starfox"
+  },
+  "8": {
+    "num": "8",
+    "file": "pikachu",
+    "series": "pokemon"
+  },
+  "9": {
+    "num": "9",
+    "file": "luigi",
+    "series": "mario"
+  },
+  "10": {
+    "num": "10",
+    "file": "ness",
+    "series": "mother"
+  },
+  "11": {
+    "num": "11",
+    "file": "captain_falcon",
+    "series": "f-zero"
+  },
+  "12": {
+    "num": "12",
+    "file": "jigglypuff",
+    "series": "pokemon"
+  },
+  "13": {
+    "num": "13",
+    "file": "peach",
+    "series": "mario"
+  },
+  "13e": {
+    "num": "13",
+    "displayNum": "13ᵋ",
+    "file": "daisy",
+    "series": "mario"
+  },
+  "14": {
+    "num": "14",
+    "file": "bowser",
+    "series": "mario"
+  },
+  "15": {
+    "num": "15",
+    "file": "ice_climbers",
+    "series": "iceclimber"
+  },
+  "16": {
+    "num": "16",
+    "file": "sheik",
+    "series": "zelda"
+  },
+  "17": {
+    "num": "17",
+    "file": "zelda",
+    "series": "zelda"
+  },
+  "18": {
+    "num": "18",
+    "file": "dr_mario",
+    "series": "mario"
+  },
+  "19": {
+    "num": "19",
+    "file": "pichu",
+    "series": "pokemon"
+  },
+  "20": {
+    "num": "20",
+    "file": "falco",
+    "series": "starfox"
+  },
+  "21": {
+    "num": "21",
+    "file": "marth",
+    "series": "fireemblem"
+  },
+  "21e": {
+    "num": "21",
+    "displayNum": "21ᵋ",
+    "file": "lucina",
+    "series": "fireemblem"
+  },
+  "22": {
+    "num": "22",
+    "file": "young_link",
+    "series": "zelda"
+  },
+  "23": {
+    "num": "23",
+    "file": "ganondorf",
+    "series": "zelda"
+  },
+  "24": {
+    "num": "24",
+    "file": "mewtwo",
+    "series": "pokemon"
+  },
+  "25": {
+    "num": "25",
+    "file": "roy",
+    "series": "fireemblem"
+  },
+  "25e": {
+    "num": "25",
+    "displayNum": "25ᵋ",
+    "file": "chrom",
+    "series": "fireemblem"
+  },
+  "26": {
+    "num": "26",
+    "file": "mr_game_and_watch",
+    "series": "gamewatch"
+  },
+  "27": {
+    "num": "27",
+    "file": "meta_knight",
+    "series": "kirby"
+  },
+  "28": {
+    "num": "28",
+    "file": "pit",
+    "series": "palutena"
+  },
+  "28e": {
+    "num": "28",
+    "displayNum": "28ᵋ",
+    "file": "dark_pit",
+    "series": "palutena"
+  },
+  "29": {
+    "num": "29",
+    "file": "zero_suit_samus",
+    "series": "metroid"
+  },
+  "30": {
+    "num": "30",
+    "file": "wario",
+    "series": "wario"
+  },
+  "31": {
+    "num": "31",
+    "file": "snake",
+    "series": "metalgear"
+  },
+  "32": {
+    "num": "32",
+    "file": "ike",
+    "series": "fireemblem"
+  },
+  "33-35": {
+    "num": "33",
+    "file": "pokemon_trainer",
+    "series": "pokemon"
+  },
+  "36": {
+    "num": "36",
+    "file": "diddy_kong",
+    "series": "donkeykong"
+  },
+  "37": {
+    "num": "37",
+    "file": "lucas",
+    "series": "mother"
+  },
+  "38": {
+    "num": "38",
+    "file": "sonic",
+    "series": "sonic"
+  },
+  "39": {
+    "num": "39",
+    "file": "king_dedede",
+    "series": "kirby"
+  },
+  "40": {
+    "num": "40",
+    "file": "olimar",
+    "series": "pikmin"
+  },
+  "41": {
+    "num": "41",
+    "file": "lucario",
+    "series": "pokemon"
+  },
+  "42": {
+    "num": "42",
+    "file": "rob",
+    "series": "famicomrobot"
+  },
+  "43": {
+    "num": "43",
+    "file": "toon_link",
+    "series": "zelda"
+  },
+  "44": {
+    "num": "44",
+    "file": "wolf",
+    "series": "starfox"
+  },
+  "45": {
+    "num": "45",
+    "file": "villager",
+    "series": "doubutsu"
+  },
+  "46": {
+    "num": "46",
+    "file": "mega_man",
+    "series": "mega_man"
+  },
+  "47": {
+    "num": "47",
+    "file": "wii_fit_trainer",
+    "series": "wii_fit"
+  },
+  "48": {
+    "num": "48",
+    "file": "rosalina_and_luma",
+    "series": "mario"
+  },
+  "49": {
+    "num": "49",
+    "file": "little_mac",
+    "series": "punch_out"
+  },
+  "50": {
+    "num": "50",
+    "file": "greninja",
+    "series": "pokemon"
+  },
+  "51-53": {
+    "num": "51",
+    "file": "mii_fighter",
+    "series": "mii"
+  },
+  "54": {
+    "num": "54",
+    "file": "palutena",
+    "series": "palutena"
+  },
+  "55": {
+    "num": "55",
+    "file": "pac_man",
+    "series": "pacman"
+  },
+  "56": {
+    "num": "56",
+    "file": "robin",
+    "series": "fireemblem"
+  },
+  "57": {
+    "num": "57",
+    "file": "shulk",
+    "series": "xenoblade"
+  },
+  "58": {
+    "num": "58",
+    "file": "bowser_jr",
+    "series": "mario"
+  },
+  "59": {
+    "num": "59",
+    "file": "duck_hunt",
+    "series": "duckhunt"
+  },
+  "60": {
+    "num": "60",
+    "file": "ryu",
+    "series": "streetfighter"
+  },
+  "60e": {
+    "num": "60",
+    "displayNum": "60ᵋ",
+    "file": "ken",
+    "series": "streetfighter"
+  },
+  "61": {
+    "num": "61",
+    "file": "cloud",
+    "series": "finalfantasy"
+  },
+  "62": {
+    "num": "62",
+    "file": "corrin",
+    "series": "fireemblem"
+  },
+  "63": {
+    "num": "63",
+    "file": "bayonetta",
+    "series": "bayonetta"
+  },
+  "64": {
+    "num": "64",
+    "file": "inkling",
+    "series": "splatoon"
+  },
+  "65": {
+    "num": "65",
+    "file": "ridley",
+    "series": "metroid"
+  },
+  "66": {
+    "num": "66",
+    "file": "simon",
+    "series": "dracula"
+  },
+  "66e": {
+    "num": "66",
+    "displayNum": "66ᵋ",
+    "file": "richter",
+    "series": "dracula"
+  },
+  "67": {
+    "num": "67",
+    "file": "king_k_rool",
+    "series": "donkeykong"
+  },
+  "68": {
+    "num": "68",
+    "file": "isabelle",
+    "series": "doubutsu"
+  },
+  "69": {
+    "num": "69",
+    "file": "incineroar",
+    "series": "pokemon"
+  },
+  "70": {
+    "num": "70",
+    "file": "piranha_plant",
+    "series": "mario"
+  }
+}

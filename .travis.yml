@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "10"
+dist: trusty
+sudo: false
+
+branches:
+  only:
+  - master
+
+cache: npm
+
+install:
+  - npm install
+
+script:
+  - npm run build-dist
+
+deploy:
+  provider: pages
+  local-dir: dist
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  target-branch: bundle
+  on:
+    branch: master

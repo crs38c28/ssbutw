@@ -1,0 +1,313 @@
+{
+  "players": {
+    "player": "Player",
+    "tag": "Gamertag",
+    "name": "Name",
+    "prefix": "Sponsor Prefix",
+    "twitter": "Twitter",
+    "country": "Country"
+  },
+  "game":{
+    "chara": "Character",
+    "use": "Character",
+    "fighter": "Fighters",
+    "main": "(MAIN)",
+    "tournament": "Tournament",
+    "players": "Players"
+  },
+  "import":{
+    "key": "API Key",
+    "developer": "Get your @:(import.key) from Developer Page.",
+    "keywarning": "Protect it like you would your password.",
+    "tournament_challonge_id": "Import Players from @:(game.tournament)",
+    "tournament_smashgg_slug": "Import Brackets from @:(game.tournament)",
+    "tournament_challonge_ex": "EX： URL:'https://challonge.com/hirosuma12' @:(game.tournament) ID:'hirosuma12'。",
+    "tournament_smashgg_ex": "EX: 'https://smash.gg/tournament/genesis-6/events/smash-for-switch-singles/'",
+    "tournament_import": "Import this @:(game.tournament)",
+    "tournament_list": "@:(game.tournament) List",
+    "my_tournament": "Import from my @:(import.tournament_list)",
+    "my_tournament_import": "Load @:(import.tournament_list)",
+    "bracket_list": "Bracket/Pool List",
+    "more": "Load More",
+    "player_list": "@:(game.players) List",
+    "delete_all": "Clear @:(import.player_list)",
+    "save_all": "@:(keywords.save) All New @:(game.players)",
+    "import_all": "@:(keywords.import) All @:(game.players)",
+    "urlRuleError": "URL Format Error"
+  },
+  "keywords":{
+    "edit": "Edit",
+    "search": "Search",
+    "info": "Info",
+    "delete": "Delete",
+    "mode": "Mode",
+    "import": "Import",
+    "export": "Export",
+    "file": "File",
+    "discard": "Discard",
+    "save": "Save",
+    "language": "language",
+    "config": "Config"
+  },
+  "score":{
+    "scoreboard": "Scoreboard",
+    "reset": "Score Reset",
+    "swap": "Swap",
+    "custom_name": "Custom Tag",
+    "use_custom": "Custom",
+    "stock_icon": "Stock Icon",
+    "info": "Current Info",
+    "tournament_name": "Tournament Name",
+    "tournament_progress": "Tournament Progress",
+    "rule": "Rule Setting",
+    "winlose": "Winner/Loser",
+    "gf_loser": "Grand Finals Winner/Loser",
+    "update": "Update Info",
+    "color": "Team Color"
+  },
+  "DB":{
+    "new": "Add new @:(players.player)'s @:(keywords.info)",
+    "edit": "@:(keywords.edit) @:(players.player)'s @:(keywords.info)",
+    "search": "@:(keywords.search) @:(players.player)",
+    "editmode": "Advanced @:(keywords.mode)",
+    "importexport": "@:(keywords.import) / @:(keywords.export) @:(players.player)'s @:(keywords.info)",
+    "importJSON": "@:(keywords.import) JSON @:(keywords.file)",
+    "exportJSON": "@:(keywords.export) JSON @:(keywords.file)",
+    "dropMessage": "Drag & Drop your JSON file here. Or",
+    "successMessage": "@:(keywords.import) JSON @:(keywords.file) Success",
+    "errorMessage": "JSON @:(keywords.file) Syntax Error",
+    "nameRuleNull": "tag is required",
+    "nameRuleExist": "tag already exist",
+    "addchara": "Add more @:(game.chara)"
+  },
+  "stages":{
+    "starter": "Starter",
+    "counter": "Counter",
+    "banspage": "Use Ban.Pages URL Parameter/Format to import your stage sets",
+    "ban_1": "Player #{0} Bans {1} Stage",
+    "ban_2": "Player #{0} Bans {1} Stages (Remains: {2})",
+    "pick_1": "Player #{0} Picks {1} Stage",
+    "set": "Set Stages"
+  },
+  "fighters": {
+    "1": {
+      "name": "MARIO"
+    },
+    "2": {
+      "name": "DONKEY KONG"
+    },
+    "3": {
+      "name": "LINK"
+    },
+    "4": {
+      "name": "SAMUS"
+    },
+    "5": {
+      "name": "YOSHI"
+    },
+    "6": {
+      "name": "KIRBY"
+    },
+    "7": {
+      "name": "FOX"
+    },
+    "8": {
+      "name": "PIKACHU"
+    },
+    "9": {
+      "name": "LUIGI"
+    },
+    "10": {
+      "name": "NESS"
+    },
+    "11": {
+      "name": "CAPTAIN FALCON"
+    },
+    "12": {
+      "name": "JIGGLYPUFF"
+    },
+    "13": {
+      "name": "PEACH"
+    },
+    "14": {
+      "name": "BOWSER"
+    },
+    "15": {
+      "name": "ICE CLIMBERS"
+    },
+    "16": {
+      "name": "SHEIK"
+    },
+    "17": {
+      "name": "ZELDA"
+    },
+    "18": {
+      "name": "DR. MARIO"
+    },
+    "19": {
+      "name": "PICHU"
+    },
+    "20": {
+      "name": "FALCO"
+    },
+    "21": {
+      "name": "MARTH"
+    },
+    "22": {
+      "name": "YOUNG LINK"
+    },
+    "23": {
+      "name": "GANONDORF"
+    },
+    "24": {
+      "name": "MEWTWO"
+    },
+    "25": {
+      "name": "ROY"
+    },
+    "26": {
+      "name": "MR. GAME & WATCH"
+    },
+    "27": {
+      "name": "META KNIGHT"
+    },
+    "28": {
+      "name": "PIT"
+    },
+    "29": {
+      "name": "ZERO SUIT SAMUS"
+    },
+    "30": {
+      "name": "WARIO"
+    },
+    "31": {
+      "name": "SNAKE"
+    },
+    "32": {
+      "name": "IKE"
+    },
+    "36": {
+      "name": "DIDDY KONG"
+    },
+    "37": {
+      "name": "LUCAS"
+    },
+    "38": {
+      "name": "SONIC"
+    },
+    "39": {
+      "name": "KING DEDEDE"
+    },
+    "40": {
+      "name": "OLIMAR"
+    },
+    "41": {
+      "name": "LUCARIO"
+    },
+    "42": {
+      "name": "R.O.B."
+    },
+    "43": {
+      "name": "TOON LINK"
+    },
+    "44": {
+      "name": "WOLF"
+    },
+    "45": {
+      "name": "VILLAGER"
+    },
+    "46": {
+      "name": "MEGA MAN"
+    },
+    "47": {
+      "name": "Wii Fit TRAINER"
+    },
+    "48": {
+      "name": "ROSALINA & LUMA"
+    },
+    "49": {
+      "name": "LITTLE MAC"
+    },
+    "50": {
+      "name": "GRENINJA"
+    },
+    "54": {
+      "name": "PALUTENA"
+    },
+    "55": {
+      "name": "PAC-MAN"
+    },
+    "56": {
+      "name": "ROBIN"
+    },
+    "57": {
+      "name": "SHULK"
+    },
+    "58": {
+      "name": "BOWSER JR."
+    },
+    "59": {
+      "name": "DUCK HUNT"
+    },
+    "60": {
+      "name": "RYU"
+    },
+    "61": {
+      "name": "CLOUD"
+    },
+    "62": {
+      "name": "CORRIN"
+    },
+    "63": {
+      "name": "BAYONETTA"
+    },
+    "64": {
+      "name": "INKLING"
+    },
+    "65": {
+      "name": "RIDLEY"
+    },
+    "66": {
+      "name": "SIMON"
+    },
+    "67": {
+      "name": "KING K. ROOL"
+    },
+    "68": {
+      "name": "ISABELLE"
+    },
+    "69": {
+      "name": "INCINEROAR"
+    },
+    "70": {
+      "name": "PIRANHA PLANT"
+    },
+    "4e": {
+      "name": "DARK SAMUS"
+    },
+    "13e": {
+      "name": "DAISY"
+    },
+    "21e": {
+      "name": "LUCINA"
+    },
+    "25e": {
+      "name": "CHROM"
+    },
+    "28e": {
+      "name": "DARK PIT"
+    },
+    "33-35": {
+      "name": "POKÉMON TRAINER"
+    },
+    "51-53": {
+      "name": "Mii FIGHTER"
+    },
+    "60e": {
+      "name": "KEN"
+    },
+    "66e": {
+      "name": "RICHTER"
+    }
+  }
+}

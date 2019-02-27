@@ -1,0 +1,313 @@
+{
+  "players": {
+    "player": "玩家",
+    "tag": "名稱(1)",
+    "name": "名稱(2)",
+    "prefix": "隊伍/贊助",
+    "twitter": "推特",
+    "country": "國家"
+  },
+  "game":{
+    "chara": "角色",
+    "use": "使用@:(game.chara)",
+    "fighter": "鬥士",
+    "main": "(MAIN)",
+    "tournament": "賽事",
+    "players": "參賽者"
+  },
+  "import":{
+    "key": "API金鑰",
+    "developer": "請從開發者頁面取得@:(import.key)",
+    "keywarning": "請小心保管好你的@:(import.key)，他就像你的密碼一樣重要",
+    "tournament_challonge_id": "輸入@:(game.tournament)ID來匯入@:(players.player)",
+    "tournament_smashgg_slug": "輸入@:(game.tournament)網址來匯入賽程",
+    "tournament_challonge_ex": "若您的@:(game.tournament)為網址'https://challonge.com/xgt2019february'，則請輸入'xgt2019february'。",
+    "tournament_smashgg_ex": "輸入您賽事的網址，EX: 'https://smash.gg/tournament/genesis-6/events/smash-for-switch-singles/'",
+    "tournament_import": "匯入這場@:(game.tournament)",
+    "tournament_list": "@:(game.tournament)列表",
+    "my_tournament": "我的@:(import.tournament_list)",
+    "my_tournament_import": "載入@:(import.tournament_list)",
+    "bracket_list": "賽程列表",
+    "more": "載入更多",
+    "player_list": "@:(game.players)列表",
+    "delete_all": "清空@:(import.player_list)",
+    "save_all": "全部@:(keywords.save)",
+    "import_all": "全部@:(keywords.import)",
+    "urlRuleError": "網址格式錯誤"
+  },
+  "keywords":{
+    "edit": "編輯",
+    "search": "搜尋",
+    "info": "資料",
+    "delete": "刪除",
+    "mode": "模式",
+    "import": "匯入",
+    "export": "匯出",
+    "file": "檔案",
+    "discard": "放棄",
+    "save": "儲存",
+    "language": "語言 (Language)",
+    "config": "設定"
+  },
+  "score":{
+    "scoreboard": "記分板",
+    "reset": "分數歸零",
+    "swap": "雙方交換",
+    "custom_name": "自訂名稱",
+    "use_custom": "自訂",
+    "stock_icon": "頭像計數",
+    "info": "目前資訊",
+    "tournament_name": "賽事名稱",
+    "tournament_progress": "賽事進度",
+    "rule": "使用規則",
+    "winlose": "勝敗部",
+    "gf_loser": "左右玩家勝敗部資訊",
+    "update": "規則更新",
+    "color": "隊伍顏色"
+  },
+  "DB":{
+    "new": "新增@:(players.player)@:(keywords.info)",
+    "edit": "@:(players.player)@:(keywords.info)@:(keywords.edit)",
+    "search": "@:(keywords.search)@:(players.player)",
+    "editmode": "進階@:(keywords.mode)",
+    "importexport": "@:(keywords.import)@:(keywords.export)@:(players.player)@:(keywords.info)",
+    "importJSON": "@:(keywords.import)JSON@:(keywords.file)",
+    "exportJSON": "@:(keywords.export)JSON@:(keywords.file)",
+    "dropMessage": "拖曳檔案來上傳資料",
+    "successMessage": "@:(keywords.import)@:(keywords.file)成功",
+    "errorMessage": "JSON@:(keywords.file)格式錯誤",
+    "nameRuleNull": "請填寫名稱",
+    "nameRuleExist": "名稱已被使用",
+    "addchara": "新增@:(game.chara)"
+  },
+  "stages":{
+    "starter": "開賽場",
+    "counter": "反選場",
+    "banspage": "請使用Ban.Pages的參數來匯入自己的場地設定",
+    "ban_1": "玩家#{0} Bans {1} 個場地",
+    "ban_2": "玩家#{0} Bans {1} 個場地 (剩下: {2})",
+    "pick_1": "玩家#{0} 選 {1} 個場地",
+    "set": "設定場地"
+  },
+  "fighters": {
+    "1": {
+      "name": "瑪利歐"
+    },
+    "2": {
+      "name": "森喜剛"
+    },
+    "3": {
+      "name": "林克"
+    },
+    "4": {
+      "name": "薩姆斯"
+    },
+    "5": {
+      "name": "耀西"
+    },
+    "6": {
+      "name": "卡比"
+    },
+    "7": {
+      "name": "火狐"
+    },
+    "8": {
+      "name": "皮卡丘"
+    },
+    "9": {
+      "name": "路易吉"
+    },
+    "10": {
+      "name": "奈斯"
+    },
+    "11": {
+      "name": "飛隼隊長"
+    },
+    "12": {
+      "name": "胖丁"
+    },
+    "13": {
+      "name": "碧姬公主"
+    },
+    "14": {
+      "name": "庫巴"
+    },
+    "15": {
+      "name": "翻越冰山者"
+    },
+    "16": {
+      "name": "希克"
+    },
+    "17": {
+      "name": "薩爾達"
+    },
+    "18": {
+      "name": "瑪利歐醫生"
+    },
+    "19": {
+      "name": "皮丘"
+    },
+    "20": {
+      "name": "法爾科"
+    },
+    "21": {
+      "name": "馬爾斯"
+    },
+    "22": {
+      "name": "年幼林克"
+    },
+    "23": {
+      "name": "加儂多夫"
+    },
+    "24": {
+      "name": "超夢"
+    },
+    "25": {
+      "name": "羅伊"
+    },
+    "26": {
+      "name": "Mr. GAME & WATCH"
+    },
+    "27": {
+      "name": "魅塔騎士"
+    },
+    "28": {
+      "name": "彼特"
+    },
+    "29": {
+      "name": "零裝甲薩姆斯"
+    },
+    "30": {
+      "name": "瓦利歐"
+    },
+    "31": {
+      "name": "SNAKE"
+    },
+    "32": {
+      "name": "艾克"
+    },
+    "36": {
+      "name": "狄狄剛"
+    },
+    "37": {
+      "name": "琉加"
+    },
+    "38": {
+      "name": "索尼克"
+    },
+    "39": {
+      "name": "帝帝帝大王"
+    },
+    "40": {
+      "name": "皮克敏＆歐利瑪"
+    },
+    "41": {
+      "name": "路卡利歐"
+    },
+    "42": {
+      "name": "機器人"
+    },
+    "43": {
+      "name": "卡通林克"
+    },
+    "44": {
+      "name": "沃爾夫"
+    },
+    "45": {
+      "name": "村民"
+    },
+    "46": {
+      "name": "洛克人"
+    },
+    "47": {
+      "name": "Wii Fit教練"
+    },
+    "48": {
+      "name": "羅潔塔＆奇可"
+    },
+    "49": {
+      "name": "小麥克"
+    },
+    "50": {
+      "name": "甲賀忍蛙"
+    },
+    "54": {
+      "name": "帕露蒂娜"
+    },
+    "55": {
+      "name": "吃豆人"
+    },
+    "56": {
+      "name": "魯弗萊"
+    },
+    "57": {
+      "name": "修爾克"
+    },
+    "58": {
+      "name": "庫巴Jr."
+    },
+    "59": {
+      "name": "打獵"
+    },
+    "60": {
+      "name": "RYU"
+    },
+    "61": {
+      "name": "CLOUD"
+    },
+    "62": {
+      "name": "神威"
+    },
+    "63": {
+      "name": "BAYONETTA"
+    },
+    "64": {
+      "name": "INKLING"
+    },
+    "65": {
+      "name": "利德雷"
+    },
+    "66": {
+      "name": "SIMON"
+    },
+    "67": {
+      "name": "庫魯魯王"
+    },
+    "68": {
+      "name": "西施惠"
+    },
+    "69": {
+      "name": "熾焰咆哮虎"
+    },
+    "70": {
+      "name": "吞食花"
+    },
+    "4e": {
+      "name": "黑暗薩姆斯"
+    },
+    "13e": {
+      "name": "黛西公主"
+    },
+    "21e": {
+      "name": "露琪娜"
+    },
+    "25e": {
+      "name": "庫洛武"
+    },
+    "28e": {
+      "name": "黑暗彼特"
+    },
+    "33-35": {
+      "name": "寶可夢訓練家"
+    },
+    "51-53": {
+      "name": "Mii鬥士"
+    },
+    "60e": {
+      "name": "KEN"
+    },
+    "66e": {
+      "name": "RICHTER"
+    }
+  }
+}

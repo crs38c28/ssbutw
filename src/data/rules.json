@@ -1,0 +1,38 @@
+{
+  "playerCount": [
+    { "text": "1v1 Singles", "value": 2 },
+    { "text": "2v2 Doubles", "value": 4 }
+  ],
+  "winloselist": [
+    { "text": "Null", "value": 0 },
+    { "text": "Winners", "value": 1 },
+    { "text": "Losers", "value": 2 }
+  ],
+  "FINAL": 13,
+  "progresslist": [
+    { "text": "Null", "value": 0 },
+    { "text": "Pools", "value": 1 },
+    { "text": "Top 128", "value": 2 },
+    { "text": "Top 96", "value": 3 },
+    { "text": "Top 64", "value": 4 },
+    { "text": "Top 48", "value": 5 },
+    { "text": "Top 32", "value": 6 },
+    { "text": "Top 16", "value": 7 },
+    { "text": "Top 8", "value": 8 },
+    { "text": "Top 4", "value": 9 },
+    { "text": "Quarter-Finals", "value": 10 },
+    { "text": "Semi-Finals", "value": 11 },
+    { "text": "Final", "value": 12 },
+    { "text": "Grand Finals", "value": 13 }
+  ],
+  "finallist": [
+    { "text": "Null", "value": 0 },
+    { "text": "W-L", "value": 1 },
+    { "text": "L-W", "value": 2 },
+    { "text": "L-L (Reset)", "value": 3 }
+  ],
+  "bolist": [
+    { "text": "Best of 3", "value": 3 },
+    { "text": "Best of 5", "value": 5 }
+  ]
+}
