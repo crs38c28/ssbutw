@@ -75,7 +75,7 @@
                 <v-layout row wrap v-for="(bracket,index) in phase.bracket"
                   :key="id+'bracket'+index"
                   class="bracketlist">
-                  <v-flex xs8 class="bracketlist__text">Pool {{bracket.name}}</v-flex>
+                  <v-flex xs8 class="bracketlist__text">Pool {{bracket.displayIdentifier}}</v-flex>
                   <v-flex xs4>
                     <v-btn dark @click.stop="getSmashggPlayer(bracket.id)">
                       <v-icon>fas fa-file-import</v-icon>
@@ -189,17 +189,8 @@ export default {
             this.$set(this.smashgg.phases, element.id, {
               name: element.name,
               groupCount: element.groupCount,
-              bracket: [],
+              bracket: element.phaseGroups.nodes,
             });
-          });
-          result.data.event.phaseGroups.forEach((element) => {
-            this.smashgg.phases[element.phaseId].bracket.push({
-              id: element.id,
-              name: element.displayIdentifier,
-            });
-          });
-          Object.keys(this.smashgg.phases).forEach((element) => {
-            this.smashgg.phases[element].bracket.sort((a, b) => (a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' })));
           });
         })
         .catch((error) => {
@@ -212,29 +203,32 @@ export default {
       }
       nodecg.sendMessage('smashgg_players', bracketId)
         .then((result) => {
+          console.log(result);
           if (result === {}) {
             return;
           }
           if (!result.errors) {
             const playerSet = new Set();
-            result.data.phaseGroup.seeds.forEach((element) => {
-              if (!element.players) {
+            result.data.phaseGroup.seeds.nodes.forEach((seed) => {
+              if (!seed.players) {
                 return;
               }
-              playerSet.add(element.players[0].gamerTag);
-              /**
-                country in smashgg is wierd...
-                some poeple are 'US' some are 'United States'
-                and need to map into country code instead of country name.
-               */
-              this.smashgg.playerData[element.players[0].gamerTag] = {
-                country: null,
-                tag: element.players[0].gamerTag,
-                name: '',
-                prefix: element.players[0].prefix || '',
-                twitter: element.players[0].twitterHandle || '',
-                fighters: [],
-              };
+              seed.players.forEach((player) => {
+                playerSet.add(player.gamerTag);
+                /**
+                  country in smashgg is wierd...
+                  some poeple are 'US' some are 'United States'
+                  and need to map into country code instead of country name.
+                */
+                this.smashgg.playerData[player.gamerTag] = {
+                  country: null,
+                  tag: player.gamerTag,
+                  name: '',
+                  prefix: player.prefix || '',
+                  twitter: player.twitterHandle || '',
+                  fighters: [],
+                };
+              });
             });
             this.smashgg.playerArr = [...playerSet];
           } else {

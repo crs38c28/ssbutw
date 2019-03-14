@@ -33,11 +33,13 @@ module.exports = function api(nodecg) {
             id
             name
             groupCount
-          }
-          phaseGroups {
-            id
-            phaseId
-            displayIdentifier
+            phaseGroups {
+              nodes{
+                id
+                phaseId
+                displayIdentifier
+              }
+            }
           }
         }
       }
@@ -66,12 +68,16 @@ module.exports = function api(nodecg) {
       query: `
       query phaseGroupsQuery($id: Int!) {
         phaseGroup(id: $id) {
-          seeds {
-            players{
-              prefix
-              gamerTag
-              twitterHandle
-              country
+          seeds(query:{
+            perPage: 1000
+          }) {
+            nodes{
+              players{
+                prefix
+                gamerTag
+                twitterHandle
+                country
+              } 
             }
           }
         }
