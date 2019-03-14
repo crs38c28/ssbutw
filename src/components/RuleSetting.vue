@@ -11,6 +11,12 @@
       :label="$t('score.tournament_name')"
       ></v-text-field>
     </v-flex>
+    <v-flex xs10>
+      <v-text-field
+      v-model="formData.tournament_location"
+      :label="$t('score.tournament_location')"
+      ></v-text-field>
+    </v-flex>
     <v-flex xs6 class="pl-2 pr-2">
       <v-select
         :items="OPTIONS.playerCount"
@@ -98,6 +104,7 @@ export default {
         bo: 3,
         tournament_name: '',
         tournament_progress: '',
+        tournament_location: '',
       },
     };
   },
@@ -105,6 +112,7 @@ export default {
     updateRule() {
       let tmpProgress = '';
       this.Rep.Tournament.value.event = this.formData.tournament_name;
+      this.Rep.Tournament.value.location = this.formData.tournament_location;
       this.Rep.Tournament.value.playerCount = this.formData.playerCount;
       if (this.formData.progress_custom) {
         this.Rep.Tournament.value.progress = this.formData.tournament_progress;
@@ -135,6 +143,7 @@ export default {
     this.OPTIONS = OPTIONS;
     Object.defineProperty(this.OPTIONS, '_isVue', { value: true, enumerable: false });
     this.formData.tournament_name = this.tournament.event;
+    this.formData.tournament_location = this.tournament.location;
     this.formData.playerCount = this.tournament.playerCount;
   },
 };

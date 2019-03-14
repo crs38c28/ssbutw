@@ -8,24 +8,24 @@
       <div id="stock">
         <div id="stock1">
           <transition name="fade" mode="out-in">
-            <div :key="'P1-4'+tournament.player[0].stock_icon[0]" class="icon"
-            :style="StockIcon(tournament.player[0].stock_icon[0])"></div>
+            <div :key="'P1-4'+tournament.player[0].stock_icon[4]" class="icon"
+            :style="StockIcon(tournament.player[0].stock_icon[4])"></div>
           </transition>
           <transition name="fade" mode="out-in">
-            <div :key="'P1-3'+tournament.player[0].stock_icon[1]" class="icon"
-            :style="StockIcon(tournament.player[0].stock_icon[1])"></div>
+            <div :key="'P1-3'+tournament.player[0].stock_icon[3]" class="icon"
+            :style="StockIcon(tournament.player[0].stock_icon[3])"></div>
           </transition>
           <transition name="fade" mode="out-in">
             <div :key="'P1-2'+tournament.player[0].stock_icon[2]" class="icon"
             :style="StockIcon(tournament.player[0].stock_icon[2])"></div>
           </transition>
           <transition name="fade" mode="out-in">
-            <div :key="'P1-1'+tournament.player[0].stock_icon[3]" class="icon"
-            :style="StockIcon(tournament.player[0].stock_icon[3])"></div>
+            <div :key="'P1-1'+tournament.player[0].stock_icon[1]" class="icon"
+            :style="StockIcon(tournament.player[0].stock_icon[1])"></div>
           </transition>
           <transition name="fade" mode="out-in">
-            <div :key="'P1-0'+tournament.player[0].stock_icon[4]" class="icon"
-            :style="StockIcon(tournament.player[0].stock_icon[4])"></div>
+            <div :key="'P1-0'+tournament.player[0].stock_icon[0]" class="icon"
+            :style="StockIcon(tournament.player[0].stock_icon[0])"></div>
           </transition>
         </div>
         <div id="stock2">
@@ -56,12 +56,14 @@
           <div class="score" :key="tournament.player[0].score" :style="P1Score">
           </div>
         </transition>
+        <div class="score--after" :style="BoScore"></div>
       </div>
       <div id="score2">
         <transition name="fade" mode="out-in">
           <div class="score" :key="tournament.player[1].score" :style="P2Score">
           </div>
         </transition>
+        <div class="score--after" :style="BoScore"></div>
       </div>
       <div class="playerboard" id="player1">{{playerBoard[0]}}</div>
       <div class="playerboard" id="player2">{{playerBoard[1]}}</div>
@@ -98,8 +100,17 @@ export default {
     };
   },
   computed: {
+    BoScore() {
+      const bg = `url('../pic/score-board/UMEBURA/bo${this.tournament.bo}-0.png')`;
+      return {
+        'background-size': 'contain',
+        'background-image': bg,
+        'background-repeat': 'no-repeat',
+        'background-position': 'center center',
+      };
+    },
     P1Score() {
-      const bg = `url('../pic/score-board/HIROSUMA/bo${this.tournament.bo}-${this.tournament.player[0].score}-L.png')`;
+      const bg = `url('../pic/score-board/UMEBURA/bo${this.tournament.bo}-${this.tournament.player[0].score}.png')`;
       return {
         'background-size': 'contain',
         'background-image': bg,
@@ -108,7 +119,7 @@ export default {
       };
     },
     P2Score() {
-      const bg = `url('../pic/score-board/HIROSUMA/bo${this.tournament.bo}-${this.tournament.player[1].score}-R.png')`;
+      const bg = `url('../pic/score-board/UMEBURA/bo${this.tournament.bo}-${this.tournament.player[1].score}.png')`;
       return {
         'background-size': 'contain',
         'background-image': bg,
@@ -251,16 +262,17 @@ export default {
 };
 </script>
 <style lang="scss">
-  body {
-    margin:0px;
-    background-color: rgba(0, 0, 0, 0);
-    font-family: 'Noto Sans CJK JP Heavy','OmePlus P Gothic medium',
-      '07鉄瓶ゴシック','なごみ極細ゴシック 特細','JFドットM+H12','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',
-      Arial,'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    color:#FFFFFF;
-    word-break: break-all;
+  @font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../css/NotoSansTC-Regular.woff') format('woff');
   }
-
+  body {
+    font-family: 'Noto Sans TC';
+    margin:0;
+    overflow: hidden;
+  }
   .scoreboard {
     margin:0px;
     background-color: rgba(255, 255, 255, 0);
@@ -296,7 +308,7 @@ export default {
       z-index: 4;
       top:-50px;
       left:0px;
-      background-image:url('../pic/score-board/HIROSUMA/Scoreboard01.png');
+      background-image:url('../pic/score-board/UMEBURA/Scoreboard01.png');
     }
     &__left {
       z-index: 3;
@@ -337,6 +349,7 @@ export default {
     text-align: center;
     font-size: 25px;
     color: #fff;
+    transform: scaleX(-1);
   }
 
   #player1 {
@@ -429,5 +442,12 @@ export default {
     width: 52px;
     height: 29px;
     z-index:7;
+    &--after{
+      z-index:6;
+      width: 52px;
+      height: 29px;
+      position: absolute;
+      top: 0;
+    }
   }
 </style>

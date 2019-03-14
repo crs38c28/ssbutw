@@ -59,6 +59,7 @@
     "info": "大会情報",
     "tournament_name": "大会名称",
     "tournament_progress": "対戦中ブラケット",
+    "tournament_location": "大会会場",
     "rule": "大会規則",
     "winlose": "勝者側/敗者側",
     "gf_loser": "決勝戦 - プレイヤー 勝/敗者側",

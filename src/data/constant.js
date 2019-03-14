@@ -36,6 +36,7 @@ export const REP_SETTING_DEFAULT = {
 export const REP_TOURNAMENT_DEFAULT = {
   event: '',
   progress: '',
+  location: '',
   final: 0,
   bo: 3,
   playerCount: 2,

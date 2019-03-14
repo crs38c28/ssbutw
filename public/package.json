@@ -59,12 +59,6 @@
         "singleInstance": false
       },
       {
-        "file": "HIROSUMA.html",
-        "width": 1280,
-        "height": 720,
-        "singleInstance": false
-      },
-      {
         "file": "Genesis6.html",
         "width": 1280,
         "height": 720,
@@ -84,6 +78,30 @@
       },
       {
         "file": "BanStage-Genesis6.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "HIROSUMA.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "HIROSUMA-Symmetry.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },      
+      {
+        "file": "HIROSUMA-Interval.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "HIROSUMA-Thumbnail.html",
         "width": 1280,
         "height": 720,
         "singleInstance": false
