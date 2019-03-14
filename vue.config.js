@@ -40,6 +40,7 @@ module.exports = {
 
   chainWebpack(config) {
     config.output.filename('js/[name].js');
+    // config.plugins.delete('optimize-css');
   },
 
   pluginOptions: {

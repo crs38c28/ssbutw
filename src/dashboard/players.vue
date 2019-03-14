@@ -378,11 +378,18 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+  @font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../css/NotoSansTC-Regular.woff') format('woff');
+  }
   ul{
     padding: 0;
     list-style-type: none;
   }
   #app{
+    font-family: 'Noto Sans TC';
     background-color: #dedede;
   }
   #uploadInput{

@@ -28,6 +28,9 @@
               {{$t('score.tournament_name')}}: {{tournament.event}}
             </v-flex>
             <v-flex xs12>
+              {{$t('score.tournament_location')}}: {{tournament.location}}
+            </v-flex>
+            <v-flex xs12>
               {{$t('score.tournament_progress')}}: {{tournament.progress}}
             </v-flex>
             <v-flex xs12>
@@ -127,11 +130,18 @@ export default {
 </script>
 
 <style>
+  @font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../css/NotoSansTC-Regular.woff') format('woff');
+  }
   ul{
     padding: 0;
     list-style-type: none;
   }
   #app{
+    font-family: 'Noto Sans TC';
     background-color: #dedede;
   }
   .panel{

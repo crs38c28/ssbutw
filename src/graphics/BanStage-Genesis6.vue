@@ -59,7 +59,18 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
+  @font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../css/NotoSansTC-Regular.woff') format('woff');
+  }
+  body {
+    font-family: 'Noto Sans TC';
+    margin:0;
+    overflow: hidden;
+  }
   ul{
     padding: 0;
     list-style-type: none;

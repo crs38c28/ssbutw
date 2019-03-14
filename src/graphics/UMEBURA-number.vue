@@ -169,162 +169,172 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-
-.scoreboard {
-  margin:0px;
-  background-color: rgba(255, 255, 255, 0);
-  background-repeat: no-repeat;
-  font-weight: bold;
-  font-size: 14 px;
-  color:#050505;
-  overflow: hidden;
-  width:1280px;
-  height:48px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-}
-
-#container {
-  width:1280px;
-  height:48px;
-  position: absolute;
-  top:0;
-  left:0;
-  z-index: 7;
-}
-
-.board{
-  width:1280px;
-  height:720px;
-  background-repeat: no-repeat;
-  position:absolute;
-}
-
-#board{
-  &__middle {
-    z-index: 4;
-    top:-50px;
-    left:0px;
-    background-image:url('../pic/score-board/UMEBURA/Scoreboard01.png');
+<style lang="scss">
+  @font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../css/NotoSansTC-Regular.woff') format('woff');
   }
-  &__left {
+  body {
+    font-family: 'Noto Sans TC';
+    margin:0;
+    overflow: hidden;
+  }
+  .scoreboard {
+    margin:0px;
+    background-color: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 14 px;
+    color:#050505;
+    overflow: hidden;
+    width:1280px;
+    height:48px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+  }
+
+  #container {
+    width:1280px;
+    height:48px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 7;
+  }
+
+  .board{
+    width:1280px;
+    height:720px;
+    background-repeat: no-repeat;
+    position:absolute;
+  }
+
+  #board{
+    &__middle {
+      z-index: 4;
+      top:-50px;
+      left:0px;
+      background-image:url('../pic/score-board/UMEBURA/Scoreboard01.png');
+    }
+    &__left {
+      z-index: 3;
+      top:0px;
+      left:200px;
+      background-image:url('../pic/score-board/UMEBURA/Scoreboard03.png');
+    }
+    &__right {
+      z-index: 3;
+      top:0px;
+      left:-200px;
+      background-image:url('../pic/score-board/UMEBURA/Scoreboard04.png');
+    }
+  }
+
+  #flags {
+    position: absolute;
     z-index: 3;
-    top:0px;
-    left:200px;
-    background-image:url('../pic/score-board/UMEBURA/Scoreboard03.png');
+    left: 197px;
+    top: 0px;
+    width: 886px;
+    height: 31px;
+    -webkit-mask-image: url("../pic/score-board/UMEBURA/flagmask.png");
+    mask-image: url("../pic/score-board/UMEBURA/flagmask.png");
   }
-  &__right {
-    z-index: 3;
-    top:0px;
-    left:-200px;
-    background-image:url('../pic/score-board/UMEBURA/Scoreboard04.png');
+
+  #flag1 {
+    position: absolute;
+    z-index: 5;
+    width: 74px;
+    height: 31px;
+    top: 0px;
+    left: 13px;
   }
-}
 
-#flags {
-  position: absolute;
-  z-index: 3;
-  left: 197px;
-  top: 0px;
-  width: 886px;
-  height: 31px;
-  -webkit-mask-image: url("../pic/score-board/UMEBURA/flagmask.png");
-  mask-image: url("../pic/score-board/UMEBURA/flagmask.png");
-}
+  #flag2 {
+    z-index: 5;
+    position: absolute;
+    width: 74px;
+    height: 31px;
+    top: 0px;
+    right: 13px;
+  }
 
-#flag1 {
-  position: absolute;
-  z-index: 5;
-  width: 74px;
-  height: 31px;
-  top: 0px;
-  left: 13px;
-}
+  #score1 {
+    position: absolute;
+    z-index: 5;
+    width: 52px;
+    height: 25px;
+    left: 503px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+  }
 
-#flag2 {
-  z-index: 5;
-  position: absolute;
-  width: 74px;
-  height: 31px;
-  top: 0px;
-  right: 13px;
-}
+  #score2 {
+    position: absolute;
+    z-index: 5;
+    width: 52px;
+    height: 25px;
+    right: 507px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+  }
 
-#score1 {
-  position: absolute;
-  z-index: 5;
-  width: 52px;
-  height: 25px;
-  left: 503px;
-  text-align: center;
-  font-size: 25px;
-  color: #fff;
-}
+  #player1 {
+    position: absolute;
+    z-index: 5;
+    width: 230px;
+    height: 30px;
+    left: 280px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #player2 {
+    position: absolute;
+    z-index: 5;
+    width: 230px;
+    height: 30px;
+    right: 280px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
-#score2 {
-  position: absolute;
-  z-index: 5;
-  width: 52px;
-  height: 25px;
-  right: 507px;
-  text-align: center;
-  font-size: 25px;
-  color: #fff;
-}
+  #stage {
+    position: absolute;
+    z-index: 5;
+    width: 180px;
+    height: 30px;
+    top: 5px;
+    left: 550px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
 
-#player1 {
-  position: absolute;
-  z-index: 5;
-  width: 230px;
-  height: 30px;
-  left: 280px;
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  text-overflow:ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-#player2 {
-  position: absolute;
-  z-index: 5;
-  width: 230px;
-  height: 30px;
-  right: 280px;
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  text-overflow:ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
+  .hidden {
+    opacity: 0;
+  }
 
-#stage {
-  position: absolute;
-  z-index: 5;
-  width: 180px;
-  height: 30px;
-  top: 5px;
-  left: 550px;
-  font-size: 14px;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.hidden {
-  opacity: 0;
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s ease-in;
-}
-.fade-enter-to {
-  opacity: 1;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s ease-in;
+  }
+  .fade-enter-to {
+    opacity: 1;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
 </style>
