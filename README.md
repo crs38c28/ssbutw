@@ -4,7 +4,7 @@ NodeCG Scoreboard system / overlay for Super Smash Bros Ultimate(Special).
 
 This is a Dev bundle. The final bundle will be created after `npm watch` or `npm build`.
 
-You can download the final NodeCG bundle in [bundle branch](https://github.com/crs38c28/ssbutw/tree/bundle), which is build by Travis-CI automatically.
+You can download the final NodeCG bundle in [bundle branch](https://github.com/crs38c28/ssbutw/tree/bundle), which is built by Travis-CI automatically.
 
 Check **[Wiki Page](https://github.com/crs38c28/ssbutw/wiki)** for more tutorials/details.
 
@@ -125,6 +125,12 @@ use number version if you want to do a crew battle (or score > 3)
 
 This layout is similar to UMEBURA.  
 But it use stock icon to create a more fantastic layout.
+
+### HIROSUMA Thumbnails
+![Thumbnails](https://i.imgur.com/J04Dv1s.png)  
+[Author - Karupist](https://twitter.com/karupist)
+
+**Please contact [@karupist](https://twitter.com/karupist) before you use 'HIROSUMA' Layouts.**
 
 ### Genesis 6 Top 8 / Naifu Wars Style
 ![Tag](https://i.imgur.com/YXAS5gm.png)
