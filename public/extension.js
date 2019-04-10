@@ -1,4 +1,8 @@
+// import * as express from 'express'; // eslint-disable-line import/no-extraneous-dependencies
+
 const axios = require('axios');
+
+// const app = express();
 
 module.exports = function api(nodecg) {
   nodecg.listenFor('challonge_api', (methods, ack) => {
@@ -66,7 +70,7 @@ module.exports = function api(nodecg) {
     const apikey = setting.sggkey;
     axios.post(smashggAPI, {
       query: `
-      query phaseGroupsQuery($id: Int!) {
+      query phaseGroupsQuery($id: ID!) {
         phaseGroup(id: $id) {
           seeds(query:{
             perPage: 1000
@@ -99,4 +103,15 @@ module.exports = function api(nodecg) {
       console.log(error);
     });
   });
+/**
+  app.get(`/${nodecg.bundleName}/damage`, (req, res) => {
+    const damageArr = nodecg.readReplicant('damage', 'ssbutw');
+    damageArr.push({
+      p1: req.query.p1 || 0,
+      p2: req.query.p2 || 0,
+    });
+    res.sendStatus(200);
+  });
+
+  nodecg.mount(app); */
 };
