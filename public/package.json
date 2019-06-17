@@ -93,7 +93,7 @@
         "width": 1280,
         "height": 720,
         "singleInstance": false
-      },      
+      },
       {
         "file": "HIROSUMA-Interval.html",
         "width": 1280,
@@ -109,6 +109,6 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.1"
   }
 }
