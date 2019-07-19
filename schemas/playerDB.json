@@ -1,0 +1,19 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "team": { "type": "string" },
+        "country": { "type": [ "string", "null" ] },
+        "twitter": { "type": "string" },
+        "fighters": { 
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+}

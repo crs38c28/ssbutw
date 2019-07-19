@@ -1,0 +1,114 @@
+{
+  "name": "ssbutw",
+  "version": "1.0.0",
+  "description": "NodeCG bundle (Scoreboard) for Super Smash Bros Ultimate(Special)",
+  "nodecg": {
+    "compatibleRange": "^1.3.0",
+    "bundleDependencies": {},
+    "mount": [
+      {
+        "directory": "js",
+        "endpoint": "js"
+      },
+      {
+        "directory": "css",
+        "endpoint": "css"
+      },
+      {
+        "directory": "pic",
+        "endpoint": "pic"
+      }
+    ],
+    "dashboardPanels": [
+      {
+        "name": "01.ScoreBoard Panel",
+        "title": "ScoreBoard Panel",
+        "file": "scoreboard.html",
+        "fullbleed": true
+      },
+      {
+        "name": "02.Player List Panel",
+        "title": "Player List Panel",
+        "file": "list.html",
+        "fullbleed": true
+      },
+      {
+        "name": "03.Player Data Panel",
+        "title": "Player Data Panel",
+        "file": "players.html",
+        "fullbleed": true
+      },
+      {
+        "name": "03.Stage Panel",
+        "title": "Stage Panel",
+        "file": "stage.html",
+        "fullbleed": true
+      }
+    ],
+    "graphics": [
+      {
+        "file": "UMEBURA-light.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "UMEBURA-number.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "Genesis6.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "Frostbite2019-doubles.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "BanStage.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "BanStage-Genesis6.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "HIROSUMA.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "HIROSUMA-Symmetry.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "HIROSUMA-Interval.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
+        "file": "HIROSUMA-Thumbnail.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      }
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.1"
+  }
+}
