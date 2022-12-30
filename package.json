@@ -32,7 +32,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "terser": "^3.17.0",
-    "vue-cli-plugin-i18n": "^0.5.1",
+    "vue-cli-plugin-i18n": "^2.3.1",
     "vue-cli-plugin-vuetify": "^0.4.6",
     "vue-template-compiler": "^2.6.10",
     "vuetify-loader": "^1.2.2"
